@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/news.css')}}">
+{% endblock %}
+
+{% block head_title %}제보{%endblock%}
+
+{% block active_dropdown %}class="active"{% endblock %}
+
+{% block body_title %}제보{% endblock %}
+
+{% block contents %}
+    <!-- <form name="report" target = iframe1  class="gform" id="report" method="POST" data-email="TO_ADDRESS" action="https://script.google.com/macros/s/AKfycbzJm-Y85i61b31XXuMoMdDE3OVFeoBOhl0l_E4WupCwUDbWu1ZumCD6Bt5UMCbwoxVN-Q/exec">
+        이름 <input type="name" name="name" id="report-input" placeholder="예) 고주원" required><br>
+        전화번호 <input type="tel" name="phoneNumber" id="report-input" placeholder="예) 010 1234 5678" required><br><br>
+        제보 할 내용<br><textarea name="message" id="report-textarea" cols="60" rows="20" required></textarea><br>
+        <input type="submit" value="제보하기" id="submitbtn" onclick="clickSubmit();">
+    </form>
+    <iframe id="iframe1" name="iframe1" style="display: none"></iframe>
+
+    <script src="제보.js"></script> -->
+    <form method="POST" action="" id="report">
+        이름 <input type="name" name="name" id="report-input" placeholder="예) 고주원" required><br>
+        전화번호 <input type="tel" name="phoneNumber" id="report-input" placeholder="예) 010 1234 5678" required><br><br>
+        제보 할 내용<br><textarea name="contents" id="report-textarea" cols="60" rows="20" required></textarea><br>
+        <input type="submit" value="제보하기" id="submitbtn">
+    </form>
+{% endblock %}

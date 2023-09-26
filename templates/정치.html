@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/news.css')}}">
+{% endblock %}
+
+{% block head_title %}정치{% endblock %}
+
+{% block active_dropdown %}class="active"{% endblock %}
+
+{% block body_title %}정치{% endblock %}
+
+{% block contents %}
+    <div class="center">
+        <a href="{{url_for('정치', title=news_titles[0])}}" id="preview">
+            <div>
+                <img src={{images["인사하는현민"]}} alt="">
+                <h3>조현민이 학생회장이<br>되어야 하는 이유</h3>
+            </div>
+        </a>
+        <a href="{{url_for('정치', title=news_titles[1])}}" id="preview">
+            <div>
+                <img src={{images["노래중인현민"]}} alt="">
+                <h3>조현민 커리어 소개<br>&nbsp;</h3>
+            </div>
+        </a>
+        <a href="{{url_for('정치', title=news_titles[2])}}" id="preview">
+            <div>
+                <img src={{images["노래중인현민"]}} alt="">
+                <h3>학생회장 조현민 당선!<br>&nbsp;</h3>
+            </div>
+        </a>
+    </div>
+{% endblock %}

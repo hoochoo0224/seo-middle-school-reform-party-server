@@ -1,0 +1,204 @@
+p#date-writer {
+    font-size: 17px;
+    padding: 30px 20px;
+}
+
+a#preview {
+    float: right;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: black;
+    display: table;
+    width: 225px;
+}
+
+a#preview div {
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 3px 2px 3px 2px rgb(150, 150, 150);
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+
+a#preview img {
+    width: 224px;
+}
+
+a#preview h3 {
+    white-space: nowrap;
+    padding: 0px 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break:break-all;
+    width: 205px;
+}
+
+#news-sort {
+    color: rgb(43, 43, 148);
+}
+
+form#report {
+    text-align: center;
+    padding: 80px;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form input#report-input {
+    width: 390px;
+    height: 65px;
+    margin: 30px 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+form textarea#report-textarea {
+    width: 500px; 
+	height: 250px;
+    resize: none;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input#submitbtn {
+    box-shadow: 3px 3px 3px 3px rgb(73, 73, 73);
+    background-color: burlywood;
+    border: 1px solid;
+    border-radius: 12px;
+    width: 350px;
+    height: 70px;
+    margin: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition-duration: 0.3s;
+}
+
+input#submitbtn:active {
+    margin-right: 3px;
+    margin-bottom : 3px;
+    box-shadow : none;
+}
+
+div.center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+
+/* 태블릿 세로 */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 데스크탑 */
+@media only screen and (min-width: 1200px) {
+
+}
+
+/* 모바일 */
+@media (max-width: 767px){
+    p#date-writer {
+        font-size: 10px;
+        padding: 6px 13px;
+    }
+
+    a#preview {
+        float: left;
+        padding: 5px 5px;
+        text-decoration: none;
+        color: black;
+        display: table;
+        width: 100px;
+        height: 140px;  
+    }
+    
+    a#preview div {
+        border: 1px solid black;
+        background-color: white;
+        box-shadow: 3px 2px 3px 2px rgb(150, 150, 150);
+        vertical-align: middle;
+        display: table-cell;
+        text-align: center;
+    }
+    
+    a#preview img {
+        width: 100px;
+    }
+    
+    a#preview h3 {
+        font-size: 10px;
+        font-weight: 1500;
+        white-space: nowrap;
+        padding: 0px 4px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        word-break:break-all;
+        width: 95px;
+    }
+    
+    #news-sort {
+        color: rgb(43, 43, 148);
+    }
+    
+    form#report {
+        text-align: center;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    form input#report-input {
+        width: 230px;
+        height: 40px;
+        margin: 7px 10px 20px 10px;
+        font-size: 21px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+    }
+
+    form textarea#report-textarea {
+        width: 290px; 
+        height: 250px;
+        resize: none;
+        margin: 10px;
+        font-size: 17px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    input#submitbtn {
+        box-shadow: 2px 2px 2px 2px rgb(73, 73, 73);
+        background-color: burlywood;
+        border: 1px solid;
+        border-radius: 12px;
+        width: 210px;
+        height: 45px;
+        margin: 40px;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        transition-duration: 0.2s;
+    }
+
+    input#submitbtn:active {
+        margin-right: 2px;
+        margin-bottom : 2px;
+        box-shadow : none;
+    }
+
+    div.center {
+        width: 350px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

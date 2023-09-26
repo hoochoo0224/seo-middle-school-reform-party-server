@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block head_title %}공지{%endblock%}
+
+{% block active_공지 %}class="active"{% endblock %}
+
+{% block body_title %}공지{% endblock %}
+
+{% block contents %}
+    <p>
+        2022년도 학생회가 막을 내렸다.<br><br>
+        2023년에 새로운 학생회가 들어서며 개혁이 시작된다.<br><br>
+        <img id="학생회2022" src={{images["2022학생회"]}}>
+        <label for="학생회2022" id="img-label">2022학년도학생회</label>
+    </p>
+{% endblock %}

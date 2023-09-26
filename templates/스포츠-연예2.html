@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/news.css')}}">
+{% endblock %}
+
+{% block head_title %}{{title}}{%endblock%}
+
+{% block active_dropdown %}class="active"{% endblock %}
+
+{% block body_title %}{{title}}{% endblock %}
+
+{% block contents %}
+    <p id="date-writer">작성일 : 2022.12.24&nbsp;&nbsp;작성자 : 고주원 기자</p>
+    <p>
+        조현민은 서중에서 잘생긴것으로 유명한데, 여친이 없다고 한다.<br><br>
+        이 소식에 놀란 조현민의 친구에게 인터뷰를 해보았다.<br><br>
+        <img src="https://cdn.discordapp.com/attachments/1055031142258069524/1058722174803902494/ce8b5e6832ec1e43.png" alt=""><br><br>
+        역시 놀란 반응이였다. 그래서 당사자에게 직접 인터뷰를 해보았다.<br><br>
+        <img src="https://cdn.discordapp.com/attachments/1055031142258069524/1055876558100889692/f233352f45d04ad6.png" alt=""><br><br>
+        본인이 역시 여친을 못사귀는게 아니라 안사귄다고 하지만, "좋아하는 사람앞에 가면 저는 사람이 아니에여 말도 잘 못하고 떨려서 용기도 못내고..."<br><br>
+        이렇게 말한것을 봤을땐 여친을 안사귀는게 아닌 성격 때문에 '못'사귀는게 맞는것 같다.<br><br>
+        그리고 우리반에서 "우리반 잘생긴 기준"이라는 주제로 토의를 한 팀이 있었는데 그 기준에 맞게 조현민을 가장 잘생긴 사람으로 뽑았다.<br><br> 
+        <del>이런 잘생긴 현민이도 여친을 못사귀는데 우리가 여친을 못사귀는건 당연한거라고 볼 수도 있을것 같다.</del><br><br>
+        우리 모두 힘내도록 하자!
+    </p>
+{% endblock %}

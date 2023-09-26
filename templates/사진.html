@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head_title %}사진{%endblock%}
+
+{% block add_li %}
+    <li><a class="active" href="/사진▣◈ㅁㄴ라ㅜㅁ히마ㅓㅗ">사진</a></li>
+{% endblock %}
+
+{% block body_title %}사진{% endblock %}
+
+{% block contents %}
+    <div id="imgbox">
+        <img id="당황정빈" src={{images["정빈현민주원묨"]}} alt="">
+        <label id="img-label" for="당황정빈">현민, 당황정빈, 주원, 묘음</label>
+    </div>
+    <div id="imgbox">
+        <img id="기호0번고주원" src={{images["기호0번고주원"]}} alt="">
+        <label id="img-label" for="기호0번고주원">기호 0번 고주원</label>
+    </div>
+{% endblock %}

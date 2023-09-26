@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content={{images["서중개혁당로고"]}}>
+    <meta property="og:title" content="서중개혁당">
+    <meta property="og:description" content="서중개혁당은 서중을 개혁하려는 목적으로 만들어진 정당입니다.">
+    <link rel="shortcut icon" type="image/x-icon" href={{images["서중개혁당로고"]}}>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    {% block style %}{% endblock %}
+    <title>{% block head_title %}{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="dropdown">
+                <a {% block active_dropdown %}{% endblock %} href="javascript:void(0)" id="dropbtn">&#9776;</a>
+                <div id="dropdown-content">
+                    <label id="news-label">뉴스</label>
+                    <a href="/정치" style="margin-top: 18px;">정치</a>
+                    <a href="/스포츠-연예">스포츠&#183연예</a>
+                    <a href="/학교밖">학교밖</a>
+                    <a href="/제보">제보</a>
+                </div>
+            </li>
+            <div id="menu">
+                <li><a {% block active_index %}{% endblock %} href="/">서중개혁당</a></li>
+                <li><a {% block active_공지 %}{% endblock %} href="/공지">공지</a></li>
+                {% block add_li %}{% endblock %}
+            </div>
+        </ul>
+    </nav>
+    <h1>{% block body_title %}{% endblock %}</h1>
+    {% block contents %}{% endblock %}
+</body>
+</html>

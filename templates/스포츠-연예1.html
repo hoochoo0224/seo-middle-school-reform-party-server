@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/news.css')}}">
+{% endblock %}
+
+{% block head_title %}{{title}}{%endblock%}
+
+{% block active_dropdown %}class="active"{% endblock %}
+
+{% block body_title %}{{title}}{% endblock %}
+
+{% block contents %}
+    <p id="date-writer">작성일 : 2022.12.23&nbsp;&nbsp;작성자 : 고주원 기자</p>
+    <p>
+        우리학교 서중에서는 현재 축구대회를 열고있다.<br><br>
+        현재 상황은 이렇다.<br><br>
+        <strong>1반 - 2무<br><br>
+        2반 - 1승 1패<br><br>
+        3반 - 1패<br><br>
+        4반 - 1무<br><br>
+        5반 - 1승 1무</strong><br><br>
+        현재 5반이 유리한 상황이다.<br><br>
+        과연 서중개혁당의 당대표 조현민이 속한 1반은 5반을 제치고 승리 할 수 있을지 기대가 된다.<br><br>
+    </p>
+{% endblock %}

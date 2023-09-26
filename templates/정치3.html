@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head_title %}{{title}}{%endblock%}
+
+{% block active_dropdown %}class="active"{% endblock %}
+
+{% block body_title %}{{title}}{% endblock %}
+
+{% block contents %}
+    <p id="date-writer">작성일 : 2022.12.29&nbsp;&nbsp;작성자 : 고주원 기자</p>
+    <p>
+        오늘 조현민이 학생회장으로 당선되었다.<br><br>
+        우리 서중개혁당이 앞으로 좋은 정치를 해나가길 응원하겠습니다.<br><br>
+        조현민 당선 기념으로 [학생회장 조현민]과 [우리반 캐리담당 김묘음]에게 인터뷰를 해보았다.<br><br>
+        <img id="당선기념현민인터뷰" src="https://cdn.discordapp.com/attachments/1055031142258069524/1058012518200651836/whgus.png" alt="">
+        <label for="당선기념현민인터뷰" id="img-label">조현민 인터뷰</label><br>
+        역시 서중개혁당의 대표답네요.<br><br>
+        달라질 서중을 기대해보겠습니다.<br><br><br>
+        <img id="당선기념묘음인터뷰" src="https://cdn.discordapp.com/attachments/1055031142258069524/1058001083760394280/562b7a9e08ccfdd1.png" alt="">
+        <label for="당선기념묘음인터뷰" id="img-label">김묘음 인터뷰</label><br>
+        역시 묘음이 멋있습니다.<br><br>
+        묘음이의 현민이를 향한 사랑 응원하겠습니다. 꼭 이루어지길 바랄게요.
+    </p>
+{% endblock %}

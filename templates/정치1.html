@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block style %}
+    <link rel="stylesheet" href="{{url_for('static', filename='css/news.css')}}">
+{% endblock %}
+
+{% block head_title %}{{title}}{%endblock%}
+
+{% block active_dropdown %}class="active"{% endblock %}
+
+{% block body_title %}{{title}}{% endblock %}
+
+{% block contents %}
+    <p id="date-writer">작성일 : 2022.12.21&nbsp;&nbsp;작성자 : 고주원 기자</p>
+    <p>
+        서중에서 학생회장 선거까지 약 일주일이 남았는데<br>
+        조현민이 학생회장이 되어야 하는 이유가 있다.<br><br>
+        첫째, 조현민은 모범상, 봉사상을 받았다. 이 사실로 조현민은 아주 모범적인 학생이란것을 알 수 있다.<br><br>
+        둘째, 조현민은 잘생겼다. 일단 잘생긴것은 좋은거다.<br><br>
+        셋째, 조현민은 친구들과 싸우지 않고 좋은 친구관계를 유지하고 있다. 인성도 좋은 학생이다.<br><br>
+        이런 이유로 조현민이 학생회장이 되어야 한다.
+    </p>
+{% endblock %}
